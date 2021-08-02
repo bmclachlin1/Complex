@@ -59,11 +59,13 @@ class Complex:
             return Complex(num.real / den, num.imag / den)
         raise ValueError(f"Cannot divide Complex by {type(other)}")
 
-x = Complex(-2.5, -4)
-y = Complex(3.5, -3.2)
 
-print(f"({x}) + ({y}) = {x + y}")
-print(f"({x}) + 6 = {x + 6}")
-print(f"({x}) * ({y}) = {x * y}")
-print(f"({x} / {y}) = {x / y}")
-print(f"-({x}) = {-x}")
+if __name__=='__main__':
+    x = Complex(-2.5, -4)
+    y = Complex(3.5, -3.2)
+
+    print(f"({x}) + ({y}) = {x + y}")
+    print(f"({x}) + 6 = {x + 6}")
+    print(f"({x}) * ({y}) = {x * y}")
+    print(f"({x} / {y}) = {x / y}")
+    print(f"-({x}) = {-x}")
